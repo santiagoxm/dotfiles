@@ -13,7 +13,7 @@ PS1='[\u@\h \W]\$ '
 
 alias hyprcfg="micro ~/.config/hypr/hyprland.conf"
 
-alias dwmcfg="cd ~/dwm/dwm/; micro config.h"
+alias dwmcfg="cd ~/dwm/dwm/; $EDITOR config.h"
 alias gitpush="read -p 'Commit name: ' commitname; git add .; git commit -m \"\$commitname\"; git push"
 alias startvm="sudo systemctl start libvirtd.socket; sudo virsh start win10"
 alias fixres="xrandr --output HDMI-0 --auto"

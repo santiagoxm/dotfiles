@@ -1,7 +1,7 @@
 alias vi="nvim"
 alias vim="nvim"
 alias hyprcfg="micro ~/.config/hypr/hyprland.conf"
-alias dwmcfg="cd ~/dwm/dwm/; micro config.h"
+alias dwmcfg="cd ~/dwm/dwm/; $EDITOR config.h"
 alias startvm="sudo virsh start win10"
 alias fixres="xrandr --output HDMI-0 --auto"
 alias copy="xclip -i -selection clipboard"

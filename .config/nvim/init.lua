@@ -21,17 +21,52 @@ vim.opt.rtp:prepend(lazypath)
 vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
 
+vim.o.number = true -- Line numbers
+
+vim.o.ignorecase = true -- Case-insensitive searching UNLESS \C or one or more capital letters in the search term
+vim.o.smartcase = true
+
+vim.o.updatetime = 1000 -- Delay not typing before plugins update
+vim.o.timeoutlen = 300
+
+vim.o.cursorline = false
+
+vim.o.list = true
+vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
+
+vim.o.scrolloff = 10
+
+vim.o.confirm = true
+
 -- Setup lazy.nvim
 require("lazy").setup({
   spec = {
     -- add your plugins here
-    { "catppuccin/nvim", name = "catppuccin", priority = 1000 }
+    { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
+    {
+    "folke/which-key.nvim",
+    event = "VeryLazy",
+    opts = {
+      -- your configuration comes here
+      -- or leave it empty to use the default settings
+      -- refer to the configuration section below
+    },
+    keys = {
+      {
+        "<leader>?",
+        function()
+          require("which-key").show({ global = false })
+        end,
+        desc = "Buffer Local Keymaps (which-key)",
+      },
+    },
+  }
   },
   -- Configure any other settings here. See the documentation for more details.
   -- colorscheme that will be used when installing plugins.
   install = { colorscheme = { "catppuccin" } },
   -- automatically check for plugin updates
-  checker = { enabled = true },
+  checker = { enabled = false },
 })
 
 require("catppuccin").setup({
@@ -52,3 +87,4 @@ require("catppuccin").setup({
 })
 
 vim.cmd.colorscheme "catppuccin"
+

@@ -1,3 +1,4 @@
+alias v="nvim"
 alias vi="nvim"
 alias vim="nvim"
 alias hyprcfg="micro ~/.config/hypr/hyprland.conf"

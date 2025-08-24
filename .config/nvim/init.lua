@@ -38,6 +38,14 @@ vim.o.scrolloff = 10
 
 vim.o.confirm = true
 
+vim.api.nvim_create_autocmd('TextYankPost', {
+  desc = 'Highlight when yanking (copying) text',
+  group = vim.api.nvim_create_augroup('highlight-yank', { clear = true }),
+  callback = function()
+    vim.hl.on_yank { timeout = 500 }
+  end,
+})
+
 -- Setup lazy.nvim
 require("lazy").setup({
   spec = {

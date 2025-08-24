@@ -1,10 +1,11 @@
+
 #
 # This file is parsed by pam_env module
 #
 # Syntax: simple "KEY=VAL" pairs on separate lines
 #
 
-EDITOR=micro
+EDITOR=nvim
 GTK_THEME=Adwaita:dark
 QT_QPA_PLATFORMTHEME=qt5ct
 _JAVA_AWT_WM_NONREPARENTING=1

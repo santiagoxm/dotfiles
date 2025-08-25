@@ -2,6 +2,7 @@
 setxkbmap -layout es #keyboard layout
 xinput set-prop "pointer:Logitech G305" "libinput Accel Profile Enabled" 0 1 0 #disable accel
 xinput set-prop "pointer:Logitech G305" "libinput Accel Speed" -0.50 #sensitivity 
+setxkbmap -option caps:escape
 
 export SHELL=/usr/bin/fish
 

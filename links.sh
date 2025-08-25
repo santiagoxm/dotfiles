@@ -12,6 +12,7 @@ ln -sf ~/dotfiles/.config/micro/colorschemes/sangl.micro ~/.config/micro/colorsc
 ln -sf ~/dotfiles/.config/feh/buttons ~/.config/feh/buttons
 ln -sf ~/dotfiles/.config/fish/config.fish ~/.config/fish/config.fish
 ln -sf ~/dotfiles/.config/nvim ~/.config/nvim
+ln -sf ~/dotfiles/.config/ranger ~/.config/ranger
 
 #env
 sudo ln -sf ~/dotfiles/environment /etc/environment

@@ -61,7 +61,8 @@ require("lazy").setup({
       desc = "Buffer Local Keymaps (which-key)",
     }},
     },
-    {'nvim-telescope/telescope.nvim', tag = '0.1.8', dependencies = { 'nvim-lua/plenary.nvim' }}
+    {'nvim-telescope/telescope.nvim', tag = '0.1.8', dependencies = { 'nvim-lua/plenary.nvim' }},
+    {"nvim-treesitter/nvim-treesitter", branch = 'master', lazy = false, build = ":TSUpdate"}
   },
   install = { colorscheme = { "unokai" } }, -- colorscheme that will be used when installing plugins.
   checker = { enabled = false }, -- automatically check for plugin updates

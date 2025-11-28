@@ -8,6 +8,7 @@ alias fixmon="xrandr --output HDMI-0 --auto --gamma 1:1:1"
 alias copy="xclip -i -selection clipboard"
 alias play="mpv (xclip -o -selection clipboard)"
 alias ssh="env TERM=xterm-256color ssh"
+alias past="xclip -o selection clipboard"
 
 function gitpush
     read -P "Commit name: " commitname

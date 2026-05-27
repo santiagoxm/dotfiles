@@ -8,7 +8,7 @@ export SHELL=/usr/bin/fish
 
 slstatus & #status bar
 ~/.fehbg & #background
-picom & #compositor
+# picom & #compositor
 CM_SELECTIONS=clipboard clipmenud & #clipboard manager
 dunst & #notification daemon
 /usr/lib/xdg-desktop-portal-gtk & #desktop portal

@@ -9,6 +9,8 @@ alias copy="xclip -i -selection clipboard"
 alias play="mpv (xclip -o -selection clipboard)"
 alias ssh="env TERM=xterm-256color ssh"
 alias past="xclip -o selection clipboard"
+alias ffmpeg="ffmpeg -hide_banner"
+alias ffprobe="ffprobe -hide_banner"
 
 function gitpush
     read -P "Commit name: " commitname
